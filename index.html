@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GuardaListo | Inducción específica por puesto para seguridad privada</title>
+  <meta name="description" content="GuardaListo transforma guardas formalmente capacitados en guardas realmente listos para cada puesto. Inducción por QR, validación y evidencia verificable desde el celular." />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            rojo: "#CC1B1B",
+            grisOscuro: "#4A4A4A",
+            negro: "#1A1A1A",
+            grisClaro: "#F5F5F5"
+          }
+        }
+      }
+    };
+  </script>
+</head>
+
+<body class="bg-white text-negro font-sans">
+
+  <!-- NAVBAR -->
+  <header class="bg-grisOscuro text-white sticky top-0 z-50 shadow-md">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="text-2xl font-bold text-rojo tracking-tight">
+        GuardaListo
+      </a>
+
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="#problema" class="hover:text-rojo transition">Problema</a>
+        <a href="#funciona" class="hover:text-rojo transition">Cómo funciona</a>
+        <a href="#beneficios" class="hover:text-rojo transition">Beneficios</a>
+        <a href="#contacto" class="bg-rojo text-white px-5 py-2 rounded-lg hover:bg-red-700 transition">
+          Solicitar demo
+        </a>
+      </div>
+
+      <a href="#contacto" class="md:hidden bg-rojo text-white px-4 py-2 rounded-lg text-sm font-semibold">
+        Demo
+      </a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="bg-grisOscuro text-white">
+    <div class="max-w-7xl mx-auto px-6 py-20 md:py-28 grid md:grid-cols-2 gap-12 items-center">
+
+      <div>
+        <span class="inline-block bg-rojo text-white text-sm font-semibold px-4 py-2 rounded-full mb-6">
+          Inducción por QR para seguridad privada
+        </span>
+
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+          ¿Tu guarda conoce realmente el puesto antes de entrar al turno?
+        </h1>
+
+        <p class="text-lg md:text-xl text-gray-100 mb-8 leading-relaxed">
+          GuardaListo transforma guardas formalmente capacitados en guardas realmente listos para cada puesto.
+          Sin apps costosas, sin implementación compleja, desde el celular.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#contacto" class="bg-rojo text-white px-8 py-4 rounded-xl font-bold text-center hover:bg-red-700 transition shadow-lg">
+            Quiero probar GuardaListo
+          </a>
+          <a href="#funciona" class="border border-white text-white px-8 py-4 rounded-xl font-bold text-center hover:bg-white hover:text-grisOscuro transition">
+            Ver cómo funciona
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-white text-negro rounded-3xl p-8 shadow-2xl">
+        <div class="border-2 border-dashed border-rojo rounded-2xl p-8 text-center">
+          <div class="w-32 h-32 mx-auto mb-6 grid grid-cols-3 gap-2">
+            <div class="bg-negro rounded"></div>
+            <div class="bg-rojo rounded"></div>
+            <div class="bg-negro rounded"></div>
+            <div class="bg-rojo rounded"></div>
+            <div class="bg-negro rounded"></div>
+            <div class="bg-rojo rounded"></div>
+            <div class="bg-negro rounded"></div>
+            <div class="bg-rojo rounded"></div>
+            <div class="bg-negro rounded"></div>
+          </div>
+
+          <h2 class="text-2xl font-bold mb-3">Escanea. Revisa. Valida.</h2>
+          <p class="text-gray-600 leading-relaxed">
+            En 5 a 8 minutos, el guarda conoce protocolos, riesgos, reglas y contactos clave del puesto.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROBLEMA -->
+  <section id="problema" class="bg-white py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-3xl mb-12">
+        <span class="text-rojo font-bold uppercase tracking-wide text-sm">El problema</span>
+        <h2 class="text-3xl md:text-5xl font-extrabold text-negro mt-3 mb-6">
+          El guarda tiene curso, pero no siempre está listo para ese puesto.
+        </h2>
+        <p class="text-lg text-gray-700 leading-relaxed">
+          En muchas pymes de seguridad privada, la inducción al puesto se hace de forma verbal,
+          rápida o informal. El resultado: fallas en control de acceso, quejas de administradores,
+          rotación temprana y poca evidencia de gestión preventiva.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="border border-gray-200 rounded-2xl p-7 hover:shadow-lg transition">
+          <div class="w-12 h-12 bg-rojo text-white rounded-xl flex items-center justify-center mb-5">
+            <!-- Exclamation Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v4m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Fallas repetitivas</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Ingresos no autorizados, visitantes mal registrados, uso del celular y protocolos que no se aplican en campo.
+          </p>
+        </div>
+
+        <div class="border border-gray-200 rounded-2xl p-7 hover:shadow-lg transition">
+          <div class="w-12 h-12 bg-rojo text-white rounded-xl flex items-center justify-center mb-5">
+            <!-- Users Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m6-2.13a4 4 0 100-8 4 4 0 000 8zm6 2a4 4 0 10-2.65-7M6 15a4 4 0 112.65-7" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Rotación temprana</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Cada cambio de guarda obliga a reiniciar la inducción, pero muchas veces no queda evidencia clara de ese proceso.
+          </p>
+        </div>
+
+        <div class="border border-gray-200 rounded-2xl p-7 hover:shadow-lg transition">
+          <div class="w-12 h-12 bg-rojo text-white rounded-xl flex items-center justify-center mb-5">
+            <!-- Document Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h7l5 5v11a2 2 0 01-2 2z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Sin evidencia preventiva</h3>
+          <p class="text-gray-600 leading-relaxed">
+            El gerente responde quejas, pero no siempre puede demostrar que preparó al guarda antes de iniciar servicio.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CÓMO FUNCIONA -->
+  <section id="funciona" class="bg-grisClaro py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-rojo font-bold uppercase tracking-wide text-sm">Cómo funciona</span>
+        <h2 class="text-3xl md:text-5xl font-extrabold text-negro mt-3 mb-6">
+          Tres pasos simples antes de iniciar turno
+        </h2>
+        <p class="text-lg text-gray-700">
+          GuardaListo se puede implementar sin desarrollar una app. Funciona con QR, celular y formularios simples.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl p-8 shadow-sm relative">
+          <div class="absolute -top-5 left-8 bg-rojo text-white w-12 h-12 rounded-full flex items-center justify-center font-extrabold text-xl">
+            1
+          </div>
+          <div class="pt-8">
+            <h3 class="text-2xl font-bold mb-4">Crea la ficha del puesto</h3>
+            <p class="text-gray-600 leading-relaxed">
+              La empresa resume protocolos, zonas críticas, riesgos, contactos y reglas del cliente en una ficha corta.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 shadow-sm relative">
+          <div class="absolute -top-5 left-8 bg-rojo text-white w-12 h-12 rounded-full flex items-center justify-center font-extrabold text-xl">
+            2
+          </div>
+          <div class="pt-8">
+            <h3 class="text-2xl font-bold mb-4">El guarda escanea el QR</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Antes de iniciar turno, revisa la información en 5 a 8 minutos y responde 3 preguntas de validación.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 shadow-sm relative">
+          <div class="absolute -top-5 left-8 bg-rojo text-white w-12 h-12 rounded-full flex items-center justify-center font-extrabold text-xl">
+            3
+          </div>
+          <div class="pt-8">
+            <h3 class="text-2xl font-bold mb-4">Recibe evidencia automática</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Gerencia y operación tienen registro de nombre, puesto, fecha, hora y resultado de la validación.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section id="beneficios" class="bg-white py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-3xl mb-12">
+        <span class="text-rojo font-bold uppercase tracking-wide text-sm">Beneficios principales</span>
+        <h2 class="text-3xl md:text-5xl font-extrabold text-negro mt-3 mb-6">
+          Más preparación, más evidencia y más confianza frente al cliente.
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-grisClaro rounded-2xl p-8">
+          <div class="text-4xl mb-5">📍</div>
+          <h3 class="text-2xl font-bold mb-4">Inducción específica por puesto</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Cada guarda conoce los protocolos, riesgos, reglas y particularidades del cliente antes de iniciar el turno.
+          </p>
+        </div>
+
+        <div class="bg-grisClaro rounded-2xl p-8">
+          <div class="text-4xl mb-5">✅</div>
+          <h3 class="text-2xl font-bold mb-4">Evidencia verificable</h3>
+          <p class="text-gray-700 leading-relaxed">
+            El gerente sabe quién fue inducido, cuándo lo hizo y qué resultado obtuvo en la validación.
+          </p>
+        </div>
+
+        <div class="bg-grisClaro rounded-2xl p-8">
+          <div class="text-4xl mb-5">🛡️</div>
+          <h3 class="text-2xl font-bold mb-4">Protección de contratos</h3>
+          <p class="text-gray-700 leading-relaxed">
+            La empresa puede demostrar gestión preventiva ante administradores, consejos de administración y clientes corporativos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIO -->
+  <section class="bg-red-900 text-white py-20">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <p class="text-2xl md:text-4xl font-bold leading-relaxed mb-8">
+        “Antes solo confiábamos en que el guarda había recibido la instrucción. Con GuardaListo puedo mostrarle al cliente que sí fue inducido antes de iniciar turno.”
+      </p>
+      <div class="w-20 h-1 bg-rojo mx-auto mb-6"></div>
+      <p class="text-lg text-gray-100">
+        Gerente de pyme de seguridad privada — Colombia
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA FORMULARIO -->
+  <section id="contacto" class="bg-grisClaro py-20">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+      <div>
+        <span class="text-rojo font-bold uppercase tracking-wide text-sm">Solicita una prueba</span>
+        <h2 class="text-3xl md:text-5xl font-extrabold text-negro mt-3 mb-6">
+          Empieza con un puesto crítico y valida el impacto en pocas semanas.
+        </h2>
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          GuardaListo está pensado para empresas de seguridad privada que necesitan soluciones simples,
+          prácticas y económicas para reducir quejas y mejorar la preparación del personal operativo.
+        </p>
+
+        <ul class="space-y-4 text-gray-700">
+          <li class="flex gap-3">
+            <span class="text-rojo font-bold">✓</span>
+            <span>No requiere app costosa.</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="text-rojo font-bold">✓</span>
+            <span>Funciona desde el celular.</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="text-rojo font-bold">✓</span>
+            <span>Ideal para propiedad horizontal y clientes corporativos.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="bg-white rounded-3xl p-8 shadow-xl">
+        <form action="mailto:guardalisto@gmail.com" method="post" enctype="text/plain" class="space-y-5">
+          <div>
+            <label for="nombre" class="block text-sm font-bold text-negro mb-2">Nombre</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              required
+              class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-rojo"
+              placeholder="Tu nombre"
+            />
+          </div>
+
+          <div>
+            <label for="empresa" class="block text-sm font-bold text-negro mb-2">Empresa</label>
+            <input
+              type="text"
+              id="empresa"
+              name="empresa"
+              required
+              class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-rojo"
+              placeholder="Nombre de tu empresa"
+            />
+          </div>
+
+          <div>
+            <label for="correo" class="block text-sm font-bold text-negro mb-2">Correo</label>
+            <input
+              type="email"
+              id="correo"
+              name="correo"
+              required
+              class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-rojo"
+              placeholder="correo@empresa.com"
+            />
+          </div>
+
+          <div>
+            <label for="mensaje" class="block text-sm font-bold text-negro mb-2">Mensaje opcional</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="4"
+              class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-rojo"
+              placeholder="Cuéntanos qué tipo de puestos o clientes quieres mejorar"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full bg-rojo text-white px-8 py-4 rounded-xl font-bold hover:bg-red-700 transition shadow-lg"
+          >
+            Enviar solicitud
+          </button>
+
+          <p class="text-xs text-gray-500 text-center">
+            También puedes escribir directamente a guardalisto@gmail.com
+          </p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-grisOscuro text-white py-10">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div>
+        <h2 class="text-2xl font-bold text-rojo">GuardaListo</h2>
+        <p class="text-gray-200 text-sm mt-1">
+          Guardas realmente listos para cada puesto.
+        </p>
+      </div>
+
+      <div class="text-center md:text-right">
+        <p class="text-sm text-gray-200">Contacto</p>
+        <a href="mailto:guardalisto@gmail.com" class="text-white font-semibold hover:text-rojo transition">
+          guardalisto@gmail.com
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
